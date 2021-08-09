@@ -39,6 +39,7 @@ def main():
     """Make your noise here"""
 
     args = get_args()
+    items =args.item
     print(args.item)
     # TODO:  check if the list needs to be sorted
 
@@ -46,6 +47,10 @@ def main():
     #   1 Item, just pringt item
     #   2 Items: item1 and item2
     #   3 or more Items: item1, item2, itemX, and itemLast
+
+    if args.sorted:
+        items.sort()
+
 
     bringing = ' '
 
