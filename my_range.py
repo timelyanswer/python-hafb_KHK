@@ -32,6 +32,10 @@ def main():
         l = list(range(0, 10, 2)) + list(range(20, 60, 3))
         print(l)
 
+    # Enumerate
+    t = [6, 345, 67, 1, 99, 234]
+    for i, v in enumerate(t):
+        print(f'Index {i}, value {v}')
 
 # --------------------------------------------------
 if __name__ == '__main__':
