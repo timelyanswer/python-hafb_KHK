@@ -51,7 +51,7 @@ def main():
 
     #   Print info
 
-    print(f'You are brining {bringing}')
+    print(f'You are bringing {bringing}')
 
     arg = '" "'
     out = getoutput(f'{prg} {arg}')
@@ -64,11 +64,21 @@ def main():
             assert out.lower().startswith('usage')
 
 
-    def test_two():
-        """two items"""
 
-        out = getoutput(f'{prg} soda "french fries"')
-        assert out.strip() == 'You are bringing soda and french fries.'
+    num = len(items)
+    bringing =''
+
+        if num ==1:
+            bringing = items[0]
+
+        elif num ==2:
+            bringing = ' and '. join(items)
+
+        else:
+        items[-1]=' and ' + items[-1]
+            bringing = ' and '.join(items)
+
+
 
 
 
