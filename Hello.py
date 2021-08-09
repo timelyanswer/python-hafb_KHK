@@ -10,12 +10,12 @@ Login to system using:
 - Password: **Hello123**
 
 Need to open git bash and run the following comma
-'''bash
+```bash
 pip install pytest
-'''
+```
 Reload 'Pycharm'
 
-#!/usr/bin/env python3
+## Setup pytest to run in `Powershell`
 """
 Author: Jeong Kim
 Purpose: Say Hello to Waldo
