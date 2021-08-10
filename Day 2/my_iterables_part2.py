@@ -48,6 +48,32 @@ def main():
     print(values)
 
 
+    outer =[]
+    for x in range(x):
+        inner.append((y*3))
+        outer.append(inner)
+    print(outer)
+
+    outer =[]
+    for x in range(10):
+        inner = []
+        for y in range (x):
+            inner.append((y*3))
+        outer.append(inner)
+    print(outer)
+
+    outer = [[y*3 for y in range(x)] for x in range(10)]
+    print (outer)
+
+    g=((x, y) for x in range(5) for y in range(5))
+    print(g)
+    print(list(g))
+
+
+
+
+
+
+
 # --------------------------------------------------
-if __name__ == '__main__':
-    main()
+
