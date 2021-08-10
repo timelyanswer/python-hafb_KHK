@@ -20,12 +20,12 @@ def fibo():
 
 
 def gen246():
-    print('about to yeild 2')
-    yeild 2
-    print('about to yeild 4')
-    yeild 4
-    print('about to yeild 6')
-    yeild 6
+    print('about to yield 2')
+    yield 2
+    print('about to yield 4')
+    yield 4
+    print('about to yield 6')
+    yield 6
     print('about to return')
 
 def gen123():
