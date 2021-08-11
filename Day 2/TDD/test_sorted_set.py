@@ -49,6 +49,47 @@ class TestSequenceProtocol(unittest.TestCase):
         index += 1
 
 
+class TestReprProtocol(unittest.TestCase):
+    def test_repr_empty(self):
+        s = SortedSet()
+        self.assertEqual(repr(s), 'SortedSet()')
+
+    def test_repr_some(self):
+        s = SortedSet([42, 40, 19])
+        self.assertEqual(repr(s), 'SortedSet([19, 40, 42])')
+
+class TestEqualityProtocol(unittest.TestCase):
+    def test_positive_equal(self):
+        self.assertTrue(SortedSet([1, 2, 3]) == SortedSet ([1, 2, 3]))
+
+    def test_negative_equal(self):
+        self.assertFalse(SortedSet([1, 2, 3]) == SortedSet([4, 5, 6]))
+
+   def test_mismatch(self):
+        self.assertFalse(SortedSet([1, 2, 3]) == [4, 5, 6])
+
+   def test_identical(self):
+       s = SortedSet([1, 2, 3])
+       self.assertTrue(s == s)
+
+  def test_mismatch_unequal(self):
+       s = SortedSet([1, 2, 3])
+       self.assertTrue(SortedSet([1, 2, 3] != SortedSet ([4, 7, 10])))
+
+
+
+
+def __eq__(self, rhs):
+        if not isinstance(rhs, SortedSet)
+            return NotImplemented
+        return self.items == rhs._items
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
