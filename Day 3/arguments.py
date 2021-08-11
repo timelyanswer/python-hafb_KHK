@@ -26,6 +26,9 @@ def tag(name, **attributes):
     # print(type(attributes))
     result = '<' + name
     # task add info from attributes
+
+    for key, value in attributes.items():
+        result += f'{key}="{str(value)}",'
     result += '>'
     return result
 
