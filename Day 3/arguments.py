@@ -19,7 +19,10 @@ def hyper_volume(length, *lengths):
 
 def tag(name, **attributes):
     """arbitrary number of keyword
-    arguments use the ** symbol"""
+    arguments use the ** symbol
+    if we are going to include
+    ** we must include it at the
+    end of the argument, always"""
 
     # print(name)
     # print(attributes)
