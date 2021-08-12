@@ -32,6 +32,47 @@ def np_arrays():
     array_nd = np.arange(6).reshape(2, 3)
     print(array_nd)
 
+def np_print_arrays():
+    c = np.arrange(24).reshape(2, 3, 4)
+    print(c)
+
+    print(np.arange(10000))
+
+
+def np_arithmetic_operations():
+    a = np.array([10, 10, 10])
+    b = np.array([5, 5, 5])
+    # Simple addition
+    print(a + b)
+    print(a - b)
+    print(a * b)
+    print(a // b)
+    print(a % 3)
+    print( a < 20)
+    print(a ** 2)
+
+    #dot functions
+    A = np.array([[1, 1], [0, 1]])
+    B = np.array([[2, 0], [3, 4]])
+    print(f'A:{A}')
+    print(f'B:{B}')
+    print(f'Multiplication: {A*B}')
+    print(f'Dot {A.dot(B)}')
+    print(f'Dot {np.dot(A,B)}')
+
+    print(a)
+    a *= 3
+    print(a)
+    ages = np.array([12, 15, 18, 20])
+    print(f'Sum: {ages.sum()}')
+    print(f'Min: {ages.min()}')
+    print(f'Max: {ages.max()}')
+
+
+
+
+
+
 
 
 
@@ -40,7 +81,19 @@ def np_arrays():
 # --------------------------------------------------
 def main():
     """Make your noise here"""
-    np_arrays()
+    # np_arrays()
+    # np_print_arrays()
+    # print(np.arange(10000))
+    # print(np.arange(10000).reshape(100, 100))
+    np_arithmetic_operations =
+
+
+
+
+
+
+
+
 
 
 
